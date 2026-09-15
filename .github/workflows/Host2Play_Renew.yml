@@ -65,7 +65,7 @@ jobs:
 
       - name: 上传截图（首次）
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: screenshots-first-${{ github.run_number }}
           path: output/screenshots/*.png
